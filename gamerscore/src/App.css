@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&family=Patrick+Hand&display=swap');
+
 * {
   box-sizing: border-box;
   max-width: 100%;
@@ -16,12 +18,16 @@ body {
   margin-top: 3%;
 }
 
+h1 {
+  font-family: 'Goldman', cursive;
+  font-size: 2.7rem;
+}
+
 .scores-container {
   display: flex;
   flex-flow: column;
   align-items: center;
   width: 80%;
-  margin: 2%;
   border: 2px solid lightgreen;
   border-style: groove;
   border-radius: 5%;
@@ -31,27 +37,24 @@ body {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  margin: 1%;
 }
 
 .ge-container {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  margin: 1%;
 }
 
-.console-playstation {
+.console-Playstation {
   display: flex;
   flex-flow: column;
   width: 15%;
   margin: 5%;
   text-align: center;
   color: blue;
-
 }
 
-.console-xbox {
+.console-Xbox {
   display: flex;
   flex-flow: column;
   width: 15%;
@@ -60,7 +63,7 @@ body {
   color: green;
 }
 
-.console-nintendo {
+.console-Nintendo {
   display: flex;
   flex-flow: column;
   width: 15%;
@@ -69,7 +72,7 @@ body {
   color: red;
 }
 
-.console-steam {
+.console-Steam {
   display: flex;
   flex-flow: column;
   width: 15%;
@@ -86,8 +89,9 @@ body {
   text-align: center;
 }
 
-.console-score-playstation {
+.console-score-Playstation {
   display: flex;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
   margin: 5%;
@@ -96,8 +100,9 @@ body {
   border-radius: 50%;
 }
 
-.console-score-xbox {
+.console-score-Xbox {
   display: flex;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
   margin: 5%;
@@ -106,8 +111,9 @@ body {
   border-radius: 50%;
 }
 
-.console-score-nintendo {
+.console-score-Nintendo {
   display: flex;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
   margin: 5%;
@@ -116,8 +122,9 @@ body {
   border-radius: 50%;
 }
 
-.console-score-steam {
+.console-score-Steam {
   display: flex;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
   margin: 5%;
@@ -137,10 +144,24 @@ body {
 }
 
 span {
+  font-family: 'Goldman', cursive;
   font-size: 2rem;
-  /* color: lightgreen; */
 }
 
 h3 {
+  font-family: 'Patrick Hand', cursive;
+  letter-spacing: 2px;
+  font-size: 1.7rem;
   text-decoration: underline;
+}
+
+.input-container {
+  margin-top: 5%;
+}
+
+input {
+  background-color: black;
+  color: lightgreen;
+  text-align: center;
+  border-radius: 15px;
 }
