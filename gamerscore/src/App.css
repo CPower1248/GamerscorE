@@ -1,38 +1,146 @@
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+  /* border: 1px solid grey; */
+}
+
+body {
+  background-color: black;
+}
+
 .App {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  color: lightgreen;
+  margin-top: 3%;
+}
+
+.scores-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 80%;
+  margin: 2%;
+  border: 2px solid lightgreen;
+  border-style: groove;
+  border-radius: 5%;
+}
+
+.console-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 1%;
+}
+
+.ge-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 1%;
+}
+
+.console-playstation {
+  display: flex;
+  flex-flow: column;
+  width: 15%;
+  margin: 5%;
+  text-align: center;
+  color: blue;
+
+}
+
+.console-xbox {
+  display: flex;
+  flex-flow: column;
+  width: 15%;
+  margin: 5%;
+  text-align: center;
+  color: green;
+}
+
+.console-nintendo {
+  display: flex;
+  flex-flow: column;
+  width: 15%;
+  margin: 5%;
+  text-align: center;
+  color: red;
+}
+
+.console-steam {
+  display: flex;
+  flex-flow: column;
+  width: 15%;
+  margin: 5%;
+  text-align: center;
+  color: grey;
+}
+
+.console-ge {
+  display: flex;
+  flex-flow: column;
+  width: 15%;
+  margin: 5%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.console-score-playstation {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: 5%;
+  height: 15vh;
+  border-top: 1px solid blue;
+  border-radius: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.console-score-xbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+  height: 15vh;
+  border-top: 1px solid green;
+  border-radius: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.console-score-nintendo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+  height: 15vh;
+  border-top: 1px solid red;
+  border-radius: 50%;
+}
+
+.console-score-steam {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+  height: 15vh;
+  border-top: 1px solid grey;
+  border-radius: 50%;
+}
+
+.console-score-ge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+  height: 15vh;
+  border-top: 1px solid lightgreen;
+  border-radius: 50%;
+}
+
+span {
+  font-size: 2rem;
+  /* color: lightgreen; */
+}
+
+h3 {
+  text-decoration: underline;
 }
