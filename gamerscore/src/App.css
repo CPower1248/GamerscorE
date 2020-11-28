@@ -1,38 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&family=Patrick+Hand&display=swap');
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+  /* border: 1px solid grey; */
+}
+
+body {
+  background-color: black;
+}
+
 .App {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  color: lightgreen;
+  margin-top: 3%;
+}
+
+h1 {
+  font-family: 'Goldman', cursive;
+  font-size: 2.7rem;
+}
+
+.scores-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 80%;
+  border: 2px solid lightgreen;
+  border-style: groove;
+  border-radius: 5%;
+}
+
+.console-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.ge-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.console-Playstation {
+  display: flex;
+  flex-flow: column;
+  width: 15%;
+  margin: 5%;
+  text-align: center;
+  color: blue;
+}
+
+.console-Xbox {
+  display: flex;
+  flex-flow: column;
+  width: 15%;
+  margin: 5%;
+  text-align: center;
+  color: green;
+}
+
+.console-Nintendo {
+  display: flex;
+  flex-flow: column;
+  width: 15%;
+  margin: 5%;
+  text-align: center;
+  color: red;
+}
+
+.console-Steam {
+  display: flex;
+  flex-flow: column;
+  width: 15%;
+  margin: 5%;
+  text-align: center;
+  color: grey;
+}
+
+.console-ge {
+  display: flex;
+  flex-flow: column;
+  width: 15%;
+  margin: 5%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.console-score-Playstation {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-flow: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: 5%;
+  height: 15vh;
+  border-top: 1px solid blue;
+  border-radius: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.console-score-Xbox {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+  height: 15vh;
+  border-top: 1px solid green;
+  border-radius: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.console-score-Nintendo {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+  height: 15vh;
+  border-top: 1px solid red;
+  border-radius: 50%;
+}
+
+.console-score-Steam {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+  height: 15vh;
+  border-top: 1px solid grey;
+  border-radius: 50%;
+}
+
+.console-score-ge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+  height: 15vh;
+  border-top: 1px solid lightgreen;
+  border-radius: 50%;
+}
+
+span {
+  font-family: 'Goldman', cursive;
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: 'Patrick Hand', cursive;
+  letter-spacing: 2px;
+  font-size: 1.7rem;
+  text-decoration: underline;
+}
+
+.input-container {
+  margin-top: 5%;
+}
+
+input {
+  background-color: black;
+  color: lightgreen;
+  text-align: center;
+  border-radius: 15px;
 }
